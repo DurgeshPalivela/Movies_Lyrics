@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies & Lyrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav a:hover {
+            background: #2c3e50;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1em;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            display: block;
+        }
+        .card h3 {
+            padding: 1em;
+            margin: 0;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Movies & Lyrics Hub</h1>
+    <p>Your go-to platform for movies and song lyrics, from classics to the latest hits!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#movies">Movies</a>
+    <a href="#lyrics">Song Lyrics</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="container">
+    <h2>Welcome to Movies & Lyrics Hub</h2>
+    <p>Explore an extensive library of movies and their song lyrics. Whether you're looking for a nostalgic classic or the latest chart-topping hits, we have it all!</p>
+</section>
+
+<section id="movies" class="container">
+    <h2>Movies</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            <h3>Movie Title 1</h3>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            <h3>Movie Title 2</h3>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            <h3>Movie Title 3</h3>
+        </div>
+    </div>
+</section>
+
+<section id="lyrics" class="container">
+    <h2>Song Lyrics</h2>
+    <p>Search for lyrics by movie, artist, or year:</p>
+    <input type="text" placeholder="Search for lyrics..." style="width: 100%; padding: 0.5em; margin-bottom: 1em;">
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>Have questions or suggestions? Reach out to us!</p>
+    <form>
+        <input type="text" placeholder="Your Name" style="width: 100%; padding: 0.5em; margin-bottom: 1em;">
+        <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.5em; margin-bottom: 1em;">
+        <textarea placeholder="Your Message" style="width: 100%; padding: 0.5em; margin-bottom: 1em;"></textarea>
+        <button type="submit" style="background: #34495e; color: white; padding: 0.5em 1em; border: none; cursor: pointer;">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Movies & Lyrics Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
